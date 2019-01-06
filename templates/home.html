@@ -5,11 +5,14 @@
     <title>WORD COUNT</title>
   </head>
   <body>
-    <h1>Word Counthg</h1>
+    <h1>Word Count</h1>
     <form action="{% url 'count' %}" method="">
       <textarea name="name" rows="8" cols="80"></textarea>
       <br/>
       <input type="submit" name="" value="Count">
     </form>
+    <a href="{% url 'about' %}">
+        <h3>About Us</h3>
+    </a>
   </body>
 </html>
