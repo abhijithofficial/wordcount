@@ -6,7 +6,7 @@ def count(request):
     worddict={}
     for word in fulltext:
         if word in worddict:
-            worddict['word']+=1
-        else
-            worddict['word']=1
+            worddict[word]+=1
+        else:
+            worddict[word]=1
     return render(request,'count.html',{'full':len(fulltext),'give':fulltext,'worditem':worddict.items})
