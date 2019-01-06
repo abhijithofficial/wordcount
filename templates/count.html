@@ -12,7 +12,7 @@
         {{ i }}
       {% endfor %}
     </p>
-    <h2>Words and Counts</h2>
+    <h2>Words and Counts:</h2>
     <p>
       <!-- {{ worditem }} -->
       {% for i,k in worditem %}
@@ -20,6 +20,13 @@
         {{ i }} {{ k }}
         <br/>
       {% endfor %}
+    </p>
+    <h2> Sorted by number of words:</h2>
+    <p>
+      {% for i,k in large %}
+      {{ i }} {{ k }}
+      <br/>
+    {% endfor %}
     </p>
   </body>
 </html>
