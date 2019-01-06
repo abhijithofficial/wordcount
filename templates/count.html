@@ -5,6 +5,12 @@
     <title></title>
   </head>
   <body>
-    {{ full }}
+    <h1> There are {{ full }} words in given text</h1>
+    <h2>Given Text</h2>
+    <p>
+      {% for i in give %}
+        {{ i }}
+      {% endfor %}
+    </p>
   </body>
 </html>
